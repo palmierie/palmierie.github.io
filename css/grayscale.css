@@ -188,6 +188,9 @@ a {
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px; }
+  .content-section-projects {
+    padding-top: 75px;
+    padding-bottom: 150px; }
 
 .download-section {
   color: white;
