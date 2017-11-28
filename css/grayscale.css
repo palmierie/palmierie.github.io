@@ -123,11 +123,6 @@ a {
       .masthead .intro-body .intro-text {
         font-size: 22px; } }
 
-/* .video-wrap, .video-tag-bg {
-  width: 1440px;
-  z-index: -1;
-} */
-
 .video-wrap {
   position: fixed;
   top: 0;
@@ -140,32 +135,33 @@ a {
 
 .video-tag-bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
 }
 
-@media (min-aspect-ratio: 16/9 ){
-  .video-tag-bg {
-    height: 300%;
-    top: -100%;
-  }
+.video-overlay {
+  position:absolute;
+  float:left;
+  /* width:600px; */
+  min-width: 100%;
+  min-height: 100%;
+  background-color:rgba(20, 20, 40, 0.5);
+  z-index:300000;
 }
-
-@media (max-aspect-ratio: 16/9 ){
-  .video-tag-bg {
-    height: 300%;
-    top: -100%;
-  }
-}
-
 @media (max-width: 767px) {
   .video-wrap {
-    background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+    /* background: url("../img/intro-bg.jpg") no-repeat bottom center scroll; */
     background-color: black;
   }
-
   .video-tag-bg {
     display: none;
   }
@@ -195,8 +191,8 @@ a {
 
 .download-section {
   color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: black;
+  /* background: url("../img/downloads-bg.jpg") no-repeat center center scroll; */
+  /* background-color: black; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
