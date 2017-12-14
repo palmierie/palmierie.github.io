@@ -17,7 +17,8 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
-
+    <!-- AOS -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">    
     <!-- Custom styles for this template -->
     <!-- <link href="css/grayscale.min.css" rel="stylesheet"> -->
     <link href="css/grayscale.css" rel="stylesheet">
@@ -25,7 +26,11 @@
   </head>
 
   <body id="page-top">
-
+    <!-- DOUBLE CHECK -->
+      <script>
+        AOS.init();
+      </script>
+    <!-- ^ double check -->
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -108,23 +113,9 @@
           </div>
           <div class="col-lg-4 mx-auto mt-5">
             <h2>MowFlow</h2>
-            <p>An app that I built for small landscaping companies.  Allows users to enter their client list and generate the most efficient mow schedules.  Built with AngularJS, Browserify, Ruby, Bootstrap, and Materialize.  App grabs map data from Google Maps using the Google Maps API.  The app features custom-built algorithm to solve the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman Problem</a> with parameters that make the most sense to mow scheduling.</p>
+            <p>An app that I built for small landscaping companies.  Allows users to enter their client list and generate the most efficient mow schedules.  Built with Ruby on Rails, Python, Google OR-Tools, OSRM Api, Google Maps Api, and Bootstrap,.  App grabs map data from Google Maps using the Google Maps API.  The app features custom-built algorithm to solve the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman Problem</a> with parameters that make the most sense to mow scheduling.</p>
             <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">MowFlow</a>
             <a href="https://github.com/palmierie" class="btn btn-default btn-lg">Github Repo</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mx-auto mt-5">
-            <h2>Bangazon</h2>
-            <p>An app that I built as team project.  A simplified version of Amazon. Allows users to search products, and add to shoping cart.  Built with Ruby on Rails, MySql, and Bootstrap.  App grabs song data from iTunes using the iTunes API, data using a custom-built javascript webscrapper, and data using a custom-built javascript webscrapper.  Texty text texty text text.</p>
-            <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">Bangazon</a>
-            <a href="https://github.com/palmierie" class="btn btn-default btn-lg">Github Repo</a>
-          </div>
-          <div class="col-lg-4 mx-auto mt-5">
-            <h2>aFun(d)Idea</h2>
-            <p>An app that I built to make fun of crowdsourcing sites, jk it was a project.  A simplified version of Kickstarter. Allows users to search projects, fund them, and receive rewards.  Built with Ruby on Rails, Sqlite, and Bootstrap.  Gets data using a custom-built javascript webscrapper, and data using a custom-built javascript webscrapper.  Texty text texty text text.</p>
-            <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">aFun(d)Idea</a>
-            <a href="https://github.com/palmierie/rails-crowdfunding-platform" class="btn btn-default btn-lg">Github Repo</a>
           </div>
         </div>
         <a href="#tech" class="btn btn-circle js-scroll-trigger">
@@ -220,6 +211,9 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.js"></script>
