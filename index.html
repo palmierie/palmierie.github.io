@@ -38,7 +38,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Eric Palmieri</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="40px" width="40px" src="./img/evido_logo_50px.svg" alt="eric logo"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -87,13 +87,14 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="content-section text-center">
+    <section id="about" class="content-section-about text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>About Me</h2>
-            <p>Hello all!  This is a test of the.. nevermind.</p>
-            <p>I grew up building things, breaking things, DJing, wrestling, and producing music.  I’ve been an active DJ and electronic music producer for most of my life, a.k.a. a professional software user.  It wasn’t long until I became curious enough to look under the hood of these programs I was using everyday and step into the software development world.  And what a world it is!</p>
+            <img class="img-headshot" src="./img/headshot_circle_sm.png" alt="pretty looking headshot">
+            <h2></h2>
+            <p>I grew up building things, breaking things, DJing, wrestling, and producing music. I’ve been an active DJ and electronic music producer for most of my life, a.k.a. a professional software user. It wasn’t long until I became curious enough to look under the hood of the programs I was using everyday and step into the software development world. And what a world it is!</p>
             <a href="#projects" class="btn btn-circle js-scroll-trigger">
               <i class="fa fa-angle-double-down animated"></i>
             </a>
@@ -103,21 +104,21 @@
     </section>
 
     <!-- Project Section -->
-    <section id="projects" class="download-section content-section-projects text-center">
+    <section id="projects" class="content-section-projects text-center">
       <div class="container">
         <div class="col-lg-8 mx-auto">
           <h2>Projects</h2>
         </div>
         <div class="row mb-5">
-          <div class="col-lg-4 mx-auto mt-5">
-            <h2>SongSearch</h2>
-            <p>An app that I built for DJs.  Allows users to search multiple music databases at once.  Built with AngularJS, Browserify, Firebase, Bootstrap, and Materialize.  App grabs song data from iTunes using the iTunes API, Beatport using a custom-built javascript webscrapper, and Headliners Music Club using a custom-built JQuery webscrapper.  With current version, users must use a CORS Origin blocker, such as Moesif.</p>
-            <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">SongSearch</a>
-            <a href="https://github.com/palmierie/front-end-capstone" class="btn btn-default btn-lg">Github Repo</a>
+          <div class="col-lg-5 mx-auto mt-5 project-contain">
+              <h2>SongSearch</h2>
+              <p>Built with AngularJS, Browserify, Firebase, Bootstrap, and Materialize, this app allows users to search multiple music databases at once. The app grabs song data from iTunes using the iTunes API, Beatport (online music store) using a custom-built javascript web scraper, and Headliners Music Club (online record pool subscription service) using a custom-built JQuery web scraper. Results are displayed in a list with sort options, buy links, and save options (for signed in users). Signed in users can view a list of saved songs and toggle which music databases to search. With the current version, users must use a CORS Origin blocker, such as Moesif.</p>
+              <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">SongSearch</a>
+              <a href="https://github.com/palmierie/front-end-capstone" class="btn btn-default btn-lg">Github Repo</a>
           </div>
-          <div class="col-lg-4 mx-auto mt-5">
+          <div class="col-lg-5 mx-auto mt-5 project-contain">
             <h2>MowFlow</h2>
-            <p>An app that I built for small landscaping companies.  Allows users to enter their client list and generate the most efficient mow schedules.  Built with Ruby on Rails, Python, Google OR-Tools, OSRM Api, Google Maps Api, and Bootstrap,.  App grabs map data from Google Maps using the Google Maps API.  The app features custom-built algorithm to solve the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman Problem</a> with parameters that make the most sense to mow scheduling.</p>
+            <p>Built with Ruby on Rails, this app allows users to enter job information for each client and generate the most efficient work routing schedules. Coordinates from Google Places API for each client are sorted by job date and sent to the OSRM API to return a distance matrix. The distance matrix alongside job durations entered by the user are formatted and then ran through a custom-tailored python algorithm using the Google OR-Tools library to solve the “<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling Salesman Problem</a>” and the most efficient driving routes are returned. Users can reschedule jobs using the drag and drop calendar week view, view all jobs on a calendar month view or list view, view a client list, print a schedule and get Google Maps route information.</p>
             <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">MowFlow</a>
             <a href="https://github.com/palmierie/mowflow" class="btn btn-default btn-lg">Github Repo</a>
           </div>

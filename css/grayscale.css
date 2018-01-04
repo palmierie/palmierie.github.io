@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale v4.0.0-beta (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
- */
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
@@ -28,12 +23,12 @@ h6 {
   text-transform: uppercase; }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   margin: 0 0 25px; }
   @media (min-width: 768px) {
     p {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.6;
       margin: 0 0 35px; } }
 
@@ -188,18 +183,15 @@ a {
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px; }
+
 .content-section-projects {
   padding-top: 100px;
   padding-bottom: 150px; }
 
-.download-section {
-  color: white;
-  /* background: url("../img/downloads-bg.jpg") no-repeat center center scroll; */
-  /* background-color: black; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+.content-section-about {
+  padding-top: 100px;
+  padding-bottom: 150px; }
+
 
 #map {
   width: 100%;
@@ -268,3 +260,7 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+.project-contain {
+  padding: 30px;
+  border: 1px solid #42DCA3;
+}
