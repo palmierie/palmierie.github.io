@@ -1,4 +1,4 @@
-var Messenger = function(el, lineNumber) {
+var Messenger = function(el) {
   "use strict";
   var m = this;
 
@@ -7,31 +7,11 @@ var Messenger = function(el, lineNumber) {
     m.message = 0;
     m.current_length = 0;
     m.fadeBuffer = false;
-    // if (lineNumber == 1) {
-    //   // m.messages = ["test me"];
-    //   m.messages = [
-    //     "Hello.",
-    //     "My name is",
-    //     "Welcome to my",
-    //     "I'm currently creating",
-    //     "Eric Palmieri"
-    //   ];
-    // } else if (lineNumber == 2) {
-    //   // m.messages = ["test me 2"];
-    //   m.messages = [
-    //     "",
-    //     "Eric Palmieri.",
-    //     "portfolio site",
-    //     "in Nashville, TN",
-    //     ""
-    //   ];
-    // }
-
     m.messages = [
       "Hello.",
       "My name is Eric Palmieri.",
-      "Welcome to my portfolio site",
       "I'm currently creating in Nashville, TN",
+      "Welcome to my site",
       "Eric Palmieri"
     ];
 
@@ -97,7 +77,12 @@ var Messenger = function(el, lineNumber) {
     if (do_cycles === true) {
       setTimeout(m.animateFadeBuffer, 50);
     } else {
-      setTimeout(m.cycleText, 2500);
+      //TODO: make sure to set last message here too
+      if (message === "Eric Palmieri") {
+        setTimeout(m.cycleText, 5000);
+      } else {
+        setTimeout(m.cycleText, 2500);
+      }
     }
   };
 
@@ -117,5 +102,8 @@ var Messenger = function(el, lineNumber) {
   m.init();
 };
 
-var messenger = new Messenger($("#main-title"), 1);
-// var messenger2 = new Messenger($("#main-title-2"), 2);
+var messenger = new Messenger($("#main-title"));
+
+var fullpage = new fullpage("#fullpage", {
+  licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
+});

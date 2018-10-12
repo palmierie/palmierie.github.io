@@ -51,6 +51,9 @@
   <!-- Custom styles for this template -->
   <!-- <link href="css/grayscale.min.css" rel="stylesheet"> -->
   <link href="./css/grayscale.css" rel="stylesheet">
+  <!-- Fullpage js -->
+  <link href="./css/fullpage.css" rel="stylesheet">
+
 
 </head>
 
@@ -83,172 +86,195 @@
       </div>
     </div>
   </nav>
+  <div id="fullpage">
+    <!-- Intro Header -->
+    <!-- <header class="masthead">
+      <div class="video-wrap">
+        <div class="video-overlay"></div>
+        <video class="video-tag-bg" src="./vid/coding.webm" preload="auto" loop muted autoplay>
+          <source type="video/webm" src="./vid/coding.webm">
+          <source type="video/mp4" src="./vid/coding.mp4">
+        </video>
+      </div> -->
+    <!-- <div class="intro-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h1 id="main-title" class="brand-heading">Eric Palmieri</h1>
+                <a href="#about" class="btn btn-circle js-scroll-trigger">
+                  <i class="fa fa-angle-double-down animated"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+    <!-- </header> -->
 
-  <!-- Intro Header -->
-  <header class="masthead">
-    <div class="video-wrap">
-      <div class="video-overlay"></div>
-      <video class="video-tag-bg" src="./vid/coding.webm" preload="auto" loop muted autoplay>
-        <source type="video/webm" src="./vid/coding.webm">
-        <source type="video/mp4" src="./vid/coding.mp4">
-      </video>
-    </div>
-    <div class="intro-body">
+    <section class="section">
+      <!-- <div class="intro-body"> -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-8 mx-auto text-center">
             <h1 id="main-title" class="brand-heading">Eric Palmieri</h1>
-            <h1 id="main-title-2" class="brand-heading"></h1>
-            <!-- <p class="intro-text">Time to solve problems.</p> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mx-auto text-center">
             <a href="#about" class="btn btn-circle js-scroll-trigger">
               <i class="fa fa-angle-double-down animated"></i>
             </a>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+      <!-- </div> -->
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="content-section-about text-center">
-    <div class="container">
-      <div class="row">
+    <!-- About Section -->
+    <section id="about" class="content-section-about text-center section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About Me</h2>
+            <img class="img-headshot" src="./img/headshot_circle_sm.png" alt="pretty looking headshot">
+            <h2></h2>
+            <p>My name is Eric Palmieri. I grew up building things, breaking things, DJing, wrestling, and producing
+              music. I’ve been an active DJ and electronic music producer for most of my life, a.k.a. a professional
+              software user. It wasn’t long until I became curious enough to look under the hood of the programs I was
+              using everyday and step into the software development world. And what a world it is!</p>
+            <a href="#projects" class="btn btn-circle js-scroll-trigger">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="content-section-projects text-center section">
+      <div class="container">
         <div class="col-lg-8 mx-auto">
-          <h2>About Me</h2>
-          <img class="img-headshot" src="./img/headshot_circle_sm.png" alt="pretty looking headshot">
-          <h2></h2>
-          <p>My name is Eric Palmieri. I grew up building things, breaking things, DJing, wrestling, and producing
-            music. I’ve been an active DJ and electronic music producer for most of my life, a.k.a. a professional
-            software user. It wasn’t long until I became curious enough to look under the hood of the programs I was
-            using everyday and step into the software development world. And what a world it is!</p>
-          <a href="#projects" class="btn btn-circle js-scroll-trigger">
-            <i class="fa fa-angle-double-down animated"></i>
-          </a>
+          <h2>Projects</h2>
         </div>
+        <div class="row mb-5">
+          <div class="col-lg-5 mx-auto mt-5 project-contain">
+            <h2>SongSearch</h2>
+            <p>Built with AngularJS, Browserify, Firebase, Bootstrap, and Materialize, this app allows users to search
+              multiple music databases at once. The app grabs song data from iTunes using the iTunes API, Beatport
+              (online music store) using a custom-built javascript web scraper, and Headliners Music Club (online
+              record
+              pool subscription service) using a custom-built JQuery web scraper. Results are displayed in a list with
+              sort options, buy links, and save options (for signed in users). Signed in users can view a list of saved
+              songs and toggle which music databases to search.</p>
+            <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">SongSearch</a>
+            <a href="https://github.com/palmierie/front-end-capstone" class="btn btn-default btn-lg">Github Repo</a>
+          </div>
+          <div class="col-lg-5 mx-auto mt-5 project-contain">
+            <h2>MowFlow</h2>
+            <p>Built with Ruby on Rails, this app allows users to enter job information for each client and generate
+              the
+              most efficient work routing schedules. Coordinates from Google Places API for each client are sorted by
+              job
+              date and sent to the OSRM API to return a distance matrix. The distance matrix alongside job durations
+              entered by the user are formatted and then ran through a custom-tailored python algorithm using the
+              Google
+              OR-Tools library to solve the “<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling
+                Salesman Problem</a>” and the most efficient driving routes are returned. Users can reschedule jobs
+              using
+              the drag and drop calendar week view, view all jobs on a calendar month view or list view, view a client
+              list, print a schedule and get Google Maps route information.</p>
+            <!-- <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">MowFlow</a> -->
+            <a href="https://github.com/palmierie/mowflow" class="btn btn-default btn-lg">Github Repo</a>
+          </div>
+        </div>
+        <a href="#tech" class="btn btn-circle js-scroll-trigger">
+          <i class="fa fa-angle-double-down animated"></i>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Project Section -->
-  <section id="projects" class="content-section-projects text-center">
-    <div class="container">
-      <div class="col-lg-8 mx-auto">
-        <h2>Projects</h2>
-      </div>
-      <div class="row mb-5">
-        <div class="col-lg-5 mx-auto mt-5 project-contain">
-          <h2>SongSearch</h2>
-          <p>Built with AngularJS, Browserify, Firebase, Bootstrap, and Materialize, this app allows users to search
-            multiple music databases at once. The app grabs song data from iTunes using the iTunes API, Beatport
-            (online music store) using a custom-built javascript web scraper, and Headliners Music Club (online record
-            pool subscription service) using a custom-built JQuery web scraper. Results are displayed in a list with
-            sort options, buy links, and save options (for signed in users). Signed in users can view a list of saved
-            songs and toggle which music databases to search.</p>
-          <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">SongSearch</a>
-          <a href="https://github.com/palmierie/front-end-capstone" class="btn btn-default btn-lg">Github Repo</a>
+    <!-- Technologies -->
+    <section id="tech" class="content-section text-center section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Technologies</h2>
+            <p>Ruby, Rails framework, jQuery, JavaScript, HTML5, CSS3, Sass, Scss, Angular, REST Api design, Firebase,
+              Git, Bootstrap, Material, Grunt, Browserify, MySql, Sqlite, Handlebars, Google Maps Api, iTunes Api, Web
+              Scrape Design. </p>
+          </div>
         </div>
-        <div class="col-lg-5 mx-auto mt-5 project-contain">
-          <h2>MowFlow</h2>
-          <p>Built with Ruby on Rails, this app allows users to enter job information for each client and generate the
-            most efficient work routing schedules. Coordinates from Google Places API for each client are sorted by job
-            date and sent to the OSRM API to return a distance matrix. The distance matrix alongside job durations
-            entered by the user are formatted and then ran through a custom-tailored python algorithm using the Google
-            OR-Tools library to solve the “<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling
-              Salesman Problem</a>” and the most efficient driving routes are returned. Users can reschedule jobs using
-            the drag and drop calendar week view, view all jobs on a calendar month view or list view, view a client
-            list, print a schedule and get Google Maps route information.</p>
-          <!-- <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">MowFlow</a> -->
-          <a href="https://github.com/palmierie/mowflow" class="btn btn-default btn-lg">Github Repo</a>
-        </div>
+        <a href="#contact" class="btn btn-circle js-scroll-trigger">
+          <i class="fa fa-angle-double-down animated"></i>
+        </a>
       </div>
-      <a href="#tech" class="btn btn-circle js-scroll-trigger">
-        <i class="fa fa-angle-double-down animated"></i>
-      </a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Technologies -->
-  <section id="tech" class="content-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Technologies</h2>
-          <p>Ruby, Rails framework, jQuery, JavaScript, HTML5, CSS3, Sass, Scss, Angular, REST Api design, Firebase,
-            Git, Bootstrap, Material, Grunt, Browserify, MySql, Sqlite, Handlebars, Google Maps Api, iTunes Api, Web
-            Scrape Design. </p>
-        </div>
-      </div>
-      <a href="#contact" class="btn btn-circle js-scroll-trigger">
-        <i class="fa fa-angle-double-down animated"></i>
-      </a>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="content-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Get in Contact</h2>
-          <p>I hope you enjoyed my portfolio. Feel free to reach out for any inquiries! </p>
-          <ul class="list-inline banner-social-buttons">
-            <li class="list-inline-item">
-              <!-- <a id="eml" href="" class="btn btn-default btn-lg">
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Get in Contact</h2>
+            <p>I hope you enjoyed my portfolio. Feel free to reach out for any inquiries! </p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <!-- <a id="eml" href="" class="btn btn-default btn-lg">
                   <i class="fa fa-envelope-o fa-fw"></i>
                   <span class="network-name">Email</span>
                 </a> -->
-              <script type="text/javascript">
-                //<![CDATA[
-                //<!--
-                var x = "function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-                  "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\"" +
-                  "\\\\,l=x.length;for(i=0;i<l;i++){if(i<11)y++;y%=127;o+=String.fromCharCode(" +
-                  "x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\hasgysvn2iRHVFHK\\\\\\\\016\\\\" +
-                  "\\\\005\\\\\\\\024H\\\\\\\\nBH\\\\\\\\020r\\\\\\\\rU\\\\\\\\\\\\\\\\^o\\\\\\" +
-                  "\\026\\\\\\\\025^E]_\\\\\\\\007g\\\\\\\\036a\\\\\\\\034\\\\\\\\037#-#07x\\\\" +
-                  "\\\\032e*=$k.9 b4442!9\\\\\\\\\\\"\\\\w:-4v0:\\\\\\\\002}^]\\\\\\\\013C\\\\" +
-                  "\\\\007\\\\\\\\t\\\\\\\\007\\\\\\\\024\\\\\\\\033T6I\\\\\\\\n\\\\\\\\014N\\" +
-                  "\\\\\\t\\\\\\\\021\\\\\\\\\\\\\\\\\\\\\\\\027\\\\\\\\035\\\\\\\\002\\\\\\\\" +
-                  "020\\\\\\\\032\\\\\\\\030\\\\\\\\010\\\\\\\\034W\\\\\\\\024\\\\\\\\\\\\\\\\" +
-                  "\\\\\\\\033\\\\\\\\037-gu_&;:(a76x|l`/s}s`g(J5v|nlsou2N@OFx\\\\\\\\007\\\\\\" +
-                  "\\030bEHCG\\\\\\\\020\\\\\\\\002]_Q_\\\\\\\\014\\\\\\\\017\\\\\\\\033T\\\\\\" +
-                  "\\010\\\\\\\\025\\\\\\\\021\\\\\\\\002\\\\\\\\n\\\\\\\\000\\\"\\\\,11)\\\"(" +
-                  "f};)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=" +
-                  "+l;x=+x{yrt{)94=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav" +
-                  "{)x(f noitcnuf\")";
-                while (x = eval(x));
+                <script type="text/javascript">
+                  //<![CDATA[
+                  //<!--
+                  var x = "function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+                    "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\"" +
+                    "\\\\,l=x.length;for(i=0;i<l;i++){if(i<11)y++;y%=127;o+=String.fromCharCode(" +
+                    "x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\hasgysvn2iRHVFHK\\\\\\\\016\\\\" +
+                    "\\\\005\\\\\\\\024H\\\\\\\\nBH\\\\\\\\020r\\\\\\\\rU\\\\\\\\\\\\\\\\^o\\\\\\" +
+                    "\\026\\\\\\\\025^E]_\\\\\\\\007g\\\\\\\\036a\\\\\\\\034\\\\\\\\037#-#07x\\\\" +
+                    "\\\\032e*=$k.9 b4442!9\\\\\\\\\\\"\\\\w:-4v0:\\\\\\\\002}^]\\\\\\\\013C\\\\" +
+                    "\\\\007\\\\\\\\t\\\\\\\\007\\\\\\\\024\\\\\\\\033T6I\\\\\\\\n\\\\\\\\014N\\" +
+                    "\\\\\\t\\\\\\\\021\\\\\\\\\\\\\\\\\\\\\\\\027\\\\\\\\035\\\\\\\\002\\\\\\\\" +
+                    "020\\\\\\\\032\\\\\\\\030\\\\\\\\010\\\\\\\\034W\\\\\\\\024\\\\\\\\\\\\\\\\" +
+                    "\\\\\\\\033\\\\\\\\037-gu_&;:(a76x|l`/s}s`g(J5v|nlsou2N@OFx\\\\\\\\007\\\\\\" +
+                    "\\030bEHCG\\\\\\\\020\\\\\\\\002]_Q_\\\\\\\\014\\\\\\\\017\\\\\\\\033T\\\\\\" +
+                    "\\010\\\\\\\\025\\\\\\\\021\\\\\\\\002\\\\\\\\n\\\\\\\\000\\\"\\\\,11)\\\"(" +
+                    "f};)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=" +
+                    "+l;x=+x{yrt{)94=!)31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav" +
+                    "{)x(f noitcnuf\")";
+                  while (x = eval(x));
                   //-->
                   //]]>
-              </script>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/palmierie" class="btn btn-default btn-lg">
-                <i class="fa fa-github fa-fw"></i>
-                <span class="network-name">Github</span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/eric-palmieri/" class="btn btn-default btn-lg">
-                <i class="fa fa-linkedin fa-fw"></i>
-                <span class="network-name">LinkedIn</span>
-              </a>
-            </li>
-          </ul>
+                </script>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/palmierie" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/eric-palmieri/" class="btn btn-default btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <a href="#page-top" class="btn btn-circle js-scroll-trigger">
+          <i class="fa fa-angle-double-up animated"></i>
+        </a>
       </div>
-      <a href="#page-top" class="btn btn-circle js-scroll-trigger">
-        <i class="fa fa-angle-double-up animated"></i>
-      </a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container text-center">
-      <p>Copyright &copy; Eric Palmieri 2018</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="section">
+      <div class="container text-center">
+        <p>Copyright &copy; Eric Palmieri 2018</p>
+      </div>
+    </footer>
 
+  </div>
   <!-- Bootstrap core JavaScript -->
   <script src="./vendor/jquery/jquery.min.js"></script>
   <script src="./vendor/popper/popper.min.js"></script>
@@ -262,6 +288,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="./js/grayscale.js"></script>
+  <!-- Fullpage js -->
+  <script src="./js/fullpage.js"></script>
   <script src="./js/main.js"></script>
 
 </body>
