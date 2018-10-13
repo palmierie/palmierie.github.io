@@ -60,79 +60,48 @@
 </head>
 
 <body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img height="40px" width="40px" src="./img/evido_logo_50px.svg"
-          alt="eric logo"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#tech">Technologies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="video-wrap">
+    <div class="video-overlay"></div>
+    <video class="video-tag-bg" src="./vid/coding.webm" preload="auto" loop muted autoplay>
+      <source type="video/webm" src="./vid/coding.webm">
+      <source type="video/mp4" src="./vid/coding.mp4">
+    </video>
+  </div>
   <div id="fullpage">
-    <!-- Intro Header -->
-    <!-- <header class="masthead">
-      <div class="video-wrap">
-        <div class="video-overlay"></div>
-        <video class="video-tag-bg" src="./vid/coding.webm" preload="auto" loop muted autoplay>
-          <source type="video/webm" src="./vid/coding.webm">
-          <source type="video/mp4" src="./vid/coding.mp4">
-        </video>
-      </div> -->
-    <!-- <div class="intro-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h1 id="main-title" class="brand-heading">Eric Palmieri</h1>
-                <a href="#about" class="btn btn-circle js-scroll-trigger">
-                  <i class="fa fa-angle-double-down animated"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-    <!-- </header> -->
-
+    <!-- Intro -->
     <section class="section">
-      <!-- <div class="intro-body"> -->
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h1 id="main-title" class="brand-heading">Eric Palmieri</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col mx-auto text-center">
-            <a href="#about" class="btn btn-circle js-scroll-trigger">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
-          </div>
-        </div>
       </div>
-      <!-- </div> -->
+      <div class="scroll-arrows lock-bottom">
+        <span></span><span></span><span></span>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="content-section-about text-center section">
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>About Me</h2>
+            <img class="img-headshot" src="./img/headshot_circle_sm.png" alt="pretty looking headshot">
+            <h2></h2>
+            <p>I grew up building things, breaking things, DJing, wrestling, producing music and making videos.</p>
+            <p>
+              It wasn’t long until I became curious enough to look under the hood of the programs I was using everyday
+              and step into the software development world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-arrows lock-bottom">
+        <span></span><span></span><span></span>
+      </div>
+    </section>
+    <!-- <section id="about" class="content-section-about text-center section">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -149,7 +118,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Project Section -->
     <section id="projects" class="content-section-projects text-center section">

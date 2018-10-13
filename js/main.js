@@ -8,11 +8,12 @@ var Messenger = function(el) {
     m.current_length = 0;
     m.fadeBuffer = false;
     m.messages = [
-      "Hello.",
-      "My name is Eric Palmieri.",
-      "I'm currently creating in Nashville, TN",
+      "<img height='150px' width='150px' src='./img/evido_logo_50px.svg' alt='logo'>",
+      "Hello",
+      "I am Eric Palmieri",
+      "I currently create in Nashville, TN",
       "Welcome to my site",
-      "Eric Palmieri"
+      "<img height='150px' width='150px' src='./img/evido_logo_50px.svg' alt='eric logo'>"
     ];
 
     setTimeout(m.animateIn, 100);
@@ -30,7 +31,12 @@ var Messenger = function(el) {
   };
 
   m.animateIn = function() {
-    if (m.current_length < m.messages[m.message].length) {
+    if (
+      m.current_length < m.messages[m.message].length &&
+      m.messages[m.message] != m.messages[0]
+    ) {
+      // if (m.current_length < m.messages[m.message].length) {
+      // console.log("hello");
       m.current_length = m.current_length + 2;
       if (m.current_length > m.messages[m.message].length) {
         m.current_length = m.messages[m.message].length;
@@ -78,8 +84,11 @@ var Messenger = function(el) {
       setTimeout(m.animateFadeBuffer, 50);
     } else {
       //TODO: make sure to set last message here too
-      if (message === "Eric Palmieri") {
-        setTimeout(m.cycleText, 5000);
+      if (
+        message ===
+        "<img height='150px' width='150px' src='./img/evido_logo_50px.svg' alt='eric logo'>"
+      ) {
+        setTimeout(m.cycleText, 7000);
       } else {
         setTimeout(m.cycleText, 2500);
       }
