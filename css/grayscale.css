@@ -125,12 +125,10 @@ a:hover {
 }
 
 .btn {
-  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
   border-radius: 0;
 }
 
@@ -276,5 +274,148 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* FullPage Slide Arrow animation */
+.fp-controlArrow {
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+}
+
+/* Copyright Text Animation */
+
+div.copyright {
+  font-size: 16px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.copyright:first-of-type {
+  animation: showup 7s infinite;
+}
+
+div.copyright:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+div.copyright:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@media (max-width: 767px) {
+  div.copyright {
+    font-size: 14px;
+  }
+  div.copyright:last-of-type {
+    width: 0px;
+    animation: revealsm 7s infinite;
+  }
+}
+@media (max-width: 321px) {
+  div.copyright {
+    font-size: 11px;
+  }
+  div.copyright:last-of-type {
+    width: 0px;
+    animation: revealxs 7s infinite;
+  }
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    /* margin-left: -10px; */
+    /* margin-left: -800px; */
+  }
+  20% {
+    /* margin-left: -10px; */
+    /* margin-left: -800px; */
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 195px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 195px;
+  }
+}
+
+@keyframes revealsm {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 175px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 175px;
+  }
+}
+
+@keyframes revealxs {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 135px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 135px;
   }
 }

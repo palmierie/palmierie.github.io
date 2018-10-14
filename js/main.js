@@ -117,8 +117,8 @@ var messenger = new Messenger($("#main-title"));
 var fullpage = new fullpage("#fullpage", {
   licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
   continuousVertical: true,
-  controlArrows: false,
-  slidesNavigation: true
+  // controlArrows: false,
+  slidesNavigation: false
 });
 
 //Technologies
