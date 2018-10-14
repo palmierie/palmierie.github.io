@@ -72,7 +72,7 @@
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col mx-auto text-center">
             <h1 id="main-title" class="brand-heading">Eric Palmieri</h1>
           </div>
         </div>
@@ -86,7 +86,7 @@
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col mx-auto text-center">
             <h2>About Me</h2>
             <img class="img-headshot" src="./img/headshot_circle_sm.png" alt="pretty looking headshot">
             <h2></h2>
@@ -101,82 +101,85 @@
         <span></span><span></span><span></span>
       </div>
     </section>
-    <!-- <section id="about" class="content-section-about text-center section">
+
+    <!-- Technologies -->
+    <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Me</h2>
-            <img class="img-headshot" src="./img/headshot_circle_sm.png" alt="pretty looking headshot">
-            <h2></h2>
-            <p>My name is Eric Palmieri. I grew up building things, breaking things, DJing, wrestling, and producing
-              music. I’ve been an active DJ and electronic music producer for most of my life, a.k.a. a professional
-              software user. It wasn’t long until I became curious enough to look under the hood of the programs I was
-              using everyday and step into the software development world. And what a world it is!</p>
-            <a href="#projects" class="btn btn-circle js-scroll-trigger">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
+          <div class="col mx-auto">
+            <h2>Technologies I've worked with</h2>
+            <p class="technology-category">Languages</p>
+            <p data-target-resolver-2></p>
+            <p class="technology-category">Language & UI Frameworks</p>
+            <p data-target-resolver-1></p>
+            <p class="technology-category">DevOps, Source Control, & Tools</p>
+            <p data-target-resolver-3></p>
+            <p class="technology-category">Data Persistence</p>
+            <p data-target-resolver-4></p>
+            <p class="technology-category">Design Patterns & Architecture</p>
+            <p data-target-resolver-5></p>
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- Project Section -->
-    <section id="projects" class="content-section-projects text-center section">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Projects</h2>
-        </div>
-        <div class="row mb-5">
-          <div class="col-lg-5 mx-auto mt-5 project-contain">
-            <h2>SongSearch</h2>
-            <p>Built with AngularJS, Browserify, Firebase, Bootstrap, and Materialize, this app allows users to search
-              multiple music databases at once. The app grabs song data from iTunes using the iTunes API, Beatport
-              (online music store) using a custom-built javascript web scraper, and Headliners Music Club (online
-              record
-              pool subscription service) using a custom-built JQuery web scraper. Results are displayed in a list with
-              sort options, buy links, and save options (for signed in users). Signed in users can view a list of saved
-              songs and toggle which music databases to search.</p>
-            <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">SongSearch</a>
-            <a href="https://github.com/palmierie/front-end-capstone" class="btn btn-default btn-lg">Github Repo</a>
-          </div>
-          <div class="col-lg-5 mx-auto mt-5 project-contain">
-            <h2>MowFlow</h2>
-            <p>Built with Ruby on Rails, this app allows users to enter job information for each client and generate
-              the
-              most efficient work routing schedules. Coordinates from Google Places API for each client are sorted by
-              job
-              date and sent to the OSRM API to return a distance matrix. The distance matrix alongside job durations
-              entered by the user are formatted and then ran through a custom-tailored python algorithm using the
-              Google
-              OR-Tools library to solve the “<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling
-                Salesman Problem</a>” and the most efficient driving routes are returned. Users can reschedule jobs
-              using
-              the drag and drop calendar week view, view all jobs on a calendar month view or list view, view a client
-              list, print a schedule and get Google Maps route information.</p>
-            <!-- <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default btn-lg">MowFlow</a> -->
-            <a href="https://github.com/palmierie/mowflow" class="btn btn-default btn-lg">Github Repo</a>
-          </div>
-        </div>
-        <a href="#tech" class="btn btn-circle js-scroll-trigger">
-          <i class="fa fa-angle-double-down animated"></i>
-        </a>
+      <div class="scroll-arrows lock-bottom">
+        <span></span><span></span><span></span>
       </div>
     </section>
 
-    <!-- Technologies -->
-    <section id="tech" class="content-section text-center section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Technologies</h2>
-            <p>Ruby, Rails framework, jQuery, JavaScript, HTML5, CSS3, Sass, Scss, Angular, REST Api design, Firebase,
-              Git, Bootstrap, Material, Grunt, Browserify, MySql, Sqlite, Handlebars, Google Maps Api, iTunes Api, Web
-              Scrape Design. </p>
+    <!-- Project Section -->
+    <section class="section">
+      <div class="slide">
+        <div class="container">
+          <div class="col mx-auto">
+            <h2>Projects</h2>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <h2>SongSearch</h2>
+              <p>Built with AngularJS, Browserify, Firebase, Bootstrap, and Materialize, this app allows users to
+                search
+                multiple music databases at once. The app grabs song data from iTunes using the iTunes API, Beatport
+                (online music store) using a custom-built javascript web scraper, and Headliners Music Club (online
+                record
+                pool subscription service) using a custom-built JQuery web scraper. Results are displayed in a list
+                with
+                sort options, buy links, and save options (for signed in users). Signed in users can view a list of
+                saved
+                songs and toggle which music databases to search.</p>
+              <a href="https://songsearch-9506f.firebaseapp.com" class="btn btn-default">SongSearch</a>
+              <a href="https://github.com/palmierie/front-end-capstone" class="btn btn-default">Github Repo</a>
+            </div>
           </div>
         </div>
-        <a href="#contact" class="btn btn-circle js-scroll-trigger">
-          <i class="fa fa-angle-double-down animated"></i>
-        </a>
+      </div>
+      <div class="slide">
+        <div class="container">
+          <div class="col mx-auto">
+            <h2>Projects</h2>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <h2>MowFlow</h2>
+              <p>Built with Ruby on Rails, this app allows users to enter job information for each client and generate
+                the
+                most efficient work routing schedules. Coordinates from Google Places API for each client are sorted by
+                job
+                date and sent to the OSRM API to return a distance matrix. The distance matrix alongside job durations
+                entered by the user are formatted and then ran through a custom-tailored python algorithm using the
+                Google
+                OR-Tools library to solve the “<a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Traveling
+                  Salesman Problem</a>” and the most efficient driving routes are returned. Users can reschedule jobs
+                using
+                the drag and drop calendar week view, view all jobs on a calendar month view or list view, view a
+                client
+                list, print a schedule and get Google Maps route information.</p>
+              <a href="https://github.com/palmierie/mowflow" class="btn btn-default btn-lg">Github Repo</a>
+            </div>
+          </div>
+          <a href="#tech" class="btn btn-circle js-scroll-trigger">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
+        </div>
       </div>
     </section>
 
